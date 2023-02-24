@@ -25,7 +25,7 @@ Maven plugin that creates an [update4j](https://github.com/update4j/update4j) co
                             <baseUri>https://example.com/</baseUri>
                             <basePath>/home/myapp/</basePath>
                             <properties>
-                                <app-name>MyApplication</app.name>
+                                <app.name>MyApplication</app.name>
                                 <user.location>$${user.home}/myapp/</user.location>
                             </properties>
                         </configuration>
