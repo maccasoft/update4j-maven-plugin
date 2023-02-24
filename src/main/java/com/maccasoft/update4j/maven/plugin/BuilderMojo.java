@@ -149,7 +149,7 @@ public class BuilderMojo extends AbstractMojo {
 
         if (dependencySets == null) {
             getLog().debug("Adding " + artifactFile.getAbsolutePath());
-            builder.file(FileMetadata.readFrom(artifactFile.toPath()).osFromFilename().classpath());
+            builder.file(FileMetadata.readFrom(artifactFile.toPath()).path(Paths.get(artifactFile.getName())).osFromFilename().classpath());
         }
         else {
             String id = artifact.getGroupId() + ":" + artifact.getArtifactId();
