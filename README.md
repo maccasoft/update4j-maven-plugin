@@ -19,14 +19,14 @@ Maven plugin that creates an [update4j](https://github.com/update4j/update4j) co
                         <id>create-update4j-config</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>create</goal>
+                            <goal>build</goal>
                         </goals>
                         <configuration>
                             <baseUri>https://example.com/</baseUri>
                             <basePath>/home/myapp/</basePath>
                             <properties>
                                 <app.name>MyApplication</app.name>
-                                <user.location>$${user.home}/myapp/</user.location>
+                                <user.location>${user.home}/myapp/</user.location>
                             </properties>
                         </configuration>
                     </execution>
@@ -53,7 +53,7 @@ Maven plugin that creates an [update4j](https://github.com/update4j/update4j) co
                         <id>create-update4j-config</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>create</goal>
+                            <goal>build</goal>
                         </goals>
                         <configuration>
                             <fileName>config.xml</fileName>
